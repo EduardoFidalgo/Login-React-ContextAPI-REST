@@ -9,8 +9,10 @@ Login System with React + Context API + REST
 # What does this system do?
 
 - Login with ReqRes API data
-- Verificate if user have permission to see protect pages
+- Give us the info if the user is logged in or not
+- Authentication system
 - Cache system to store login informations
+- Public / Private Layout
 
 # Tools:
 
