@@ -19,7 +19,7 @@ function App() {
             </ProtectedLayout>
           </Route>
 
-          <Route path='/login'>
+          <Route path='/'>
             <Login />
           </Route>
 
