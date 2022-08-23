@@ -20,3 +20,5 @@ Login System with React + Context API + REST
 - Axios
 - Vite
 - ReqRes API
+- react-burger-menu
+- react-google-charts
