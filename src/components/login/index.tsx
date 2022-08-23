@@ -12,7 +12,7 @@ export const Login = () => {
         const user = getUserLocalStorage();
 
         if (user) {
-            history.push("/profile")
+            history.push("/dashboard")
             window.location.reload();
         }
     });
@@ -20,7 +20,7 @@ export const Login = () => {
     async function onFinish(values: { email: string, password: string }) {
         try {
             await auth.authenticate(values.email, values.password)
-            history.push("/profile")
+            history.push("/dashboard")
             window.location.reload();
         } catch (error) {
             message.error('Invalid email or password!')

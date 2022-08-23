@@ -1,0 +1,351 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f6f6f6;
+}
+
+.graphic h1 {
+    margin-top: 4.8%;
+    text-align: center;
+    color: #3c2474;
+    opacity: 80%;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 900px) {
+    .App--Dashboard {
+        display: flex;
+        text-align: center;
+    }
+
+    .graphic {
+        flex: 2;
+        margin-left: 20px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .App--Dashboard {
+        display: block;
+    }
+
+    .graphic h1 {
+        margin-top: 10.8%;
+        text-align: center;
+        color: #3c2474;
+        opacity: 80%;
+    }
+}
+
+
+.list {
+    flex: 1;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 6px 16px -12px rgb(1 1 1 / 50%);
+    overflow: auto;
+    max-height: 600px;
+}
+
+.list h1 {
+    color: #3c2474;
+    opacity: 80%;
+}
+
+.card {
+    box-shadow: 4px 4px 16px #e1e1e1, -2px -2px 16px #fff;
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.photo {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.photo img {
+    border-radius: 50%;
+}
+
+.photo h3 {
+    margin-left: 20px;
+    font-size: 25px;
+    margin-top: 10px;
+    opacity: 90%;
+}
+
+.wrapper {
+    margin-bottom: 15px;
+}
+
+/* Scroll Down Icon */
+.scroll-icon {
+    z-index: 1;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 17px;
+    color: #999;
+    background-color: transparent;
+}
+
+.mouse-icon {
+    width: 20px;
+    height: 35px;
+    margin: 5px auto 0;
+    border: 2px solid #999;
+    border-radius: 80px;
+}
+
+.mouse-icon_wheel {
+    width: 4px;
+    height: 6px;
+    margin: 8px auto 0;
+    background-color: #999;
+    border-radius: 8px;
+    animation: scroller 5s ease-out infinite;
+}
+
+@keyframes scroller {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #8f54a0 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #3c247455;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+}
+
+.card--dashboard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 6px 16px -12px rgb(1 1 1 / 50%);
+    padding: 22px;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 20px 20px 20px 20px;
+    margin-bottom: 20px;
+}
+
+.card--total {
+    flex: 1;
+    box-shadow: 0px 6px 16px -12px rgb(1 1 1 / 50%);
+    background-color: rgb(246, 246, 246);
+    padding: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.total--number {
+    box-shadow: 0px 6px 16px -12px rgb(1 1 1 / 100%);
+    padding: 10px;
+    border-radius: 50%;
+    background-color: white;
+    font-weight: 600;
+}
+
+.list h1 {
+    font-family: helvetica, arial, sans-serif;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.viz-portfolio-time-to-maturity {
+    font-family: helvetica, arial, sans-serif;
+    margin: 0 auto;
+    font-size: 10px;
+    width: 450px;
+    height: 300px
+}
+
+
+path {
+    fill: #83B0EA;
+}
+
+.domain {
+    fill: none;
+    stroke: #000;
+    stroke-width: 1px;
+}
+
+.plus--button {
+    background-color: rgb(206, 206, 255);
+    border-color: transparent;
+    border-radius: 50%;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.plus--button:hover {
+    background-color: #3c2474;
+    color: white;
+    transition: 0.5s;
+}
+
+.chart {
+    padding: 20px;
+    box-shadow: 0px 6px 16px -12px rgb(1 1 1 / 50%);
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    left: 30px;
+    top: 30px;
+    opacity: 50%;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+    background: #373a47;
+    transition: 0.5s;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+    background: #3c2474;
+    transition: 0.2s;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+    height: 24px;
+    width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+    background: #bdc3c7;
+}
+
+.bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+    background: rgb(246, 246, 246);
+    font-size: 1.5em;
+    text-align: left;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+    fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+    text-align: center;
+}
+
+/* Individual item */
+.bm-item {
+    display: inline-block;
+    padding: 2.5em 1.5em 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: black;
+}
+
+.bm-item:hover {
+    color: #3c2474;
+    transition: 0.5s;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.box--search {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.search {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid #b8b7ad;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: 0.5s;
+}
+
+.search:hover {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-color: #3c2474;
+}
+
+.search:focus {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-color: #3c2474;
+    border-color: transparent;
+}
